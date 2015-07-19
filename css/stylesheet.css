@@ -1,0 +1,29 @@
+.square{
+    border: solid black;
+    width : 30px;
+    height: 30px;
+}
+
+table{
+    margin:auto;
+    margin-top:15px;
+}
+
+.divHover{
+    background-color:#00BFFF;
+}
+
+.divClear{
+    background-color:white;
+}
+button{
+    margin-top:5px;
+    margin-left:48%;
+    background-color:#00BFFF;
+    color:white;
+    font-weight:bold;
+    font-size: 15px;
+    border: solid black;
+    padding: 2px 15px;
+    line-height:28px;
+}
