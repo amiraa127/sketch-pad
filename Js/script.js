@@ -1,3 +1,4 @@
+var currGridSize = 16;
 $(document).ready(function(){
 
     makeGrid(currGridSize);
