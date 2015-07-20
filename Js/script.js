@@ -1,5 +1,3 @@
-var currGridSize = 16;
-var totPixels    = 600;
 $(document).ready(function(){
 
     makeGrid(currGridSize);
