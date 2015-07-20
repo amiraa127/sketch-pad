@@ -1,12 +1,23 @@
 .square{
-    border: solid black;
-    width : 30px;
-    height: 30px;
+    background-color:#D0D0D0;
+    border:1px solid black;
+}
+
+#grid{
+    border: 3px solid red;
+    margin:auto;
+    margin-top:15px;
+    width : 650px;
+    height: 650px;
 }
 
 table{
+    table-layout:fixed;
+    width:100%;
+    height:100%;
     margin:auto;
-    margin-top:15px;
+    border-collapse:collapse;
+    border-spacing:0;
 }
 
 .divHover{
@@ -14,8 +25,9 @@ table{
 }
 
 .divClear{
-    background-color:white;
+    background-color:#D0D0D0;
 }
+
 button{
     margin-top:5px;
     margin-left:48%;
