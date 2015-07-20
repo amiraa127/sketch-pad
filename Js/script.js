@@ -3,12 +3,7 @@ var totPixels    = 600;
 $(document).ready(function(){
 
     makeGrid(currGridSize);
-
-    $(".square").hover(function(){
-	$(this).removeClass('divClear')
-	$(this).addClass('divHover');
-    });
-    
+     
     $("button").click(function(){
 	$(".square").removeClass('divHover')
 	$(".square").addClass('divClear')
@@ -17,7 +12,7 @@ $(document).ready(function(){
 	if (gridSize > 100){
 	    cntu = prompt("Warning! This grid size is too large. Continue? (only 'yes' will continue)")
 	}else{
-	    cntu = 'yes'
+	    cntu = 'yes';
 	}
 	if (cntu == 'yes'){
 	    if (gridSize != currGridSize && gridSize > 0){
@@ -26,8 +21,8 @@ $(document).ready(function(){
 	    }
 	}
     });
-
-
+    
+  
 });
 
 
@@ -37,8 +32,14 @@ function makeGrid(gridSize){
     for(var i = 0; i < gridSize; i++){
 	$("tbody").append('<tr id="row'+i+'"></tr>');
 	for (var j = 0; j < gridSize; j++){
-	    $("#row"+i).append('<td id="col'+j+'" class = "square"></td>');
-	    
+	    $("#row"+i).append('<td id="col'+j+'" class = "square"></td>')
 	}
     }
+
+    $(".square").mouseenter(function(){
+	$(this).removeClass('divClear')
+	$(this).addClass('divHover');
+    });
+  
+    return;
 }
